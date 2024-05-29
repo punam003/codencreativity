@@ -36,7 +36,7 @@ const Navbar = () => {
     >
       <Link href='/'>
         <Image
-          src='/8.png'
+          src='/logo-dark.png'
           alt='logo'
           width={640}
           height={360}
