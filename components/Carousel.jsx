@@ -23,6 +23,7 @@ const crimsonText = Crimson_Text({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
 });
+
 const Carousel = () => {
   const [[page, direction], setPage] = useState([0, 0]);
 
@@ -36,7 +37,7 @@ const Carousel = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // paginate(1);
+      paginate(1);
     }, 5000);
 
     return () => clearInterval(interval);
@@ -114,6 +115,7 @@ const Carousel = () => {
                     alt='carousel 2nd'
                     width={450}
                     height={225}
+                    className='min-w-[40vmax] max-w-[40vmax] drop-shadow-2xl'
                   />
                 </div>
               </div>
@@ -147,6 +149,7 @@ const Carousel = () => {
                     alt='carousel 3rd'
                     width={450}
                     height={225}
+                    className='min-w-[40vmax] max-w-[40vmax] drop-shadow-2xl'
                   />
                 </div>
               </div>
@@ -159,7 +162,7 @@ const Carousel = () => {
                 }
               >
                 <div className='flex flex-col items-start gap-[4vmin] max-w-[60%]'>
-                  <h1 className='capitalize text-[4vmax] font-bold text-neutral-100 text-center'>
+                  <h1 className='capitalize text-[4vmax] font-bold text-neutral-100'>
                     Transforming Clicks into Customers
                   </h1>
                   <p className='text-[1.5vmax] text-neutral-100'>
@@ -181,6 +184,7 @@ const Carousel = () => {
                     alt='carousel 4th'
                     width={450}
                     height={225}
+                    className='min-w-[40vmax] max-w-[40vmax]'
                   />
                 </div>
               </div>
@@ -193,7 +197,7 @@ const Carousel = () => {
                 }
               >
                 <div className='flex flex-col items-start gap-[4vmin] max-w-[60%]'>
-                  <h1 className='capitalize text-[4vmax] font-bold text-neutral-100 text-center'>
+                  <h1 className='capitalize text-[4vmax] font-bold text-neutral-100'>
                     Unlocking the Digital Doorway to Success
                   </h1>
                   <p className='text-[1.5vmax] text-neutral-100'>
@@ -214,13 +218,14 @@ const Carousel = () => {
                     alt='carousel 5th'
                     width={450}
                     height={225}
+                    className='min-w-[40vmax] max-w-[40vmax] drop-shadow-2xl'
                   />
                 </div>
               </div>
             )}
           </motion.div>
         </AnimatePresence>
-        <button
+        {/* <button
           className='absolute top-1/2 -translate-y-1/2 bg-[rgba(0,0,0,0.5)] text-white p-2 cursor-pointer left-2 z-10 text-[2.5vmax]'
           onClick={() => paginate(-1)}
         >
@@ -231,7 +236,7 @@ const Carousel = () => {
           onClick={() => paginate(1)}
         >
           <FaAngleRight />
-        </button>
+        </button> */}
         <div className='text-center absolute bottom-0 left-1/2 -translate-x-1/2 z-10'>
           {slides.map((slide, index) => (
             <span
