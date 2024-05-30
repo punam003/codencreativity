@@ -293,15 +293,17 @@ export default function Home() {
             </h3>
             <span className="bg-neutral-700 min-w-[5vmax] min-h-0.5"></span>
           </div>
-          <h1 className="text-[2.4vmax] capitalize text-zinc-600 font-bold">pay for quality services</h1>
+          <h1 className="text-[2.4vmax] capitalize text-zinc-600 font-bold">
+            pay for quality services
+          </h1>
           <p className="text-zinc-600 text-[1vmax]">
             CODE N CREATIVITY innovation meets execution. As pioneers in the
             digital realm, we offer a suite of cutting-edge services tailored to
             meet your every need. From web development and app design to digital
             marketing and beyond, our team of skilled professionals harnesses
-            the power of technology to bring your ideas to life. Whether you're
-            a startup seeking to establish your online presence or an
-            established enterprise looking to redefine your digital strategy,
+            the power of technology to bring your ideas to life. Whether
+            you&apos;re a startup seeking to establish your online presence or
+            an established enterprise looking to redefine your digital strategy,
             we&apos;re here to transform your vision into reality.
           </p>
           <div></div>
