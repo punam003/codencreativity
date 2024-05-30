@@ -37,8 +37,12 @@ const Footer = () => {
             quick links
           </h2>
           <ul className='flex flex-col items-start gap-[1.2vmin]'>
-            <li className='text-[1.8vmin] capitalize'>home</li>
-            <li className='text-[1.8vmin] capitalize'>about us</li>
+            <li className='text-[1.8vmin] capitalize'>
+              <Link href='/'>home</Link>
+            </li>
+            <li className='text-[1.8vmin] capitalize'>
+              <Link href='/about-us'>about us</Link>
+            </li>
             <li className='text-[1.8vmin] capitalize'>our services</li>
             <li className='text-[1.8vmin] capitalize'>portfolio</li>
             <li className='text-[1.8vmin] capitalize'>contact us</li>

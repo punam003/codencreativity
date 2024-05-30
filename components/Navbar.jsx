@@ -24,6 +24,7 @@ const Navbar = () => {
               marginLeft: "2vmin",
               marginRight: "2vmin",
               borderRadius: "50vmin",
+              marginTop: "1.3vmin",
               width: "98%",
             }
           : {
@@ -43,12 +44,12 @@ const Navbar = () => {
           className='max-w-[6vmax]'
         />
       </Link>
-      <ul className='flex items-center gap-[1.5vmax] justify-between'>
+      <ul className='flex items-center gap-[2.5vmax] justify-between'>
         <li className='capitalize text-[#585858] hover:text-neutral-900 font-medium hover:font-semibold text-[3vmin]'>
-          home
+          <Link href='/'>home</Link>
         </li>
         <li className='capitalize text-[#585858] hover:text-neutral-900 font-medium hover:font-semibold text-[3vmin]'>
-          about
+          <Link href='/about-us'>about</Link>
         </li>
         <li className='capitalize text-[#585858] hover:text-neutral-900 font-medium hover:font-semibold text-[3vmin]'>
           our services
@@ -59,7 +60,7 @@ const Navbar = () => {
       </ul>
       <Link
         href='/contact-us'
-        className='flex items-center gap-[2vmin] rounded-full py-[1.5vmin] px-[2vmin] text-[2.5vmin] capitalize bg-gradient-to-r from-blue-400 to-blue-700 text-neutral-100'
+        className='flex items-center gap-[2vmin] rounded-full py-[1.5vmin] px-[2vmin] text-[2.5vmin] capitalize hover:shadow-[0px_4px_6px_0px_#00000040_inset] bg-gradient-to-r from-blue-400 to-blue-700 text-neutral-100'
       >
         <MdOutlineBolt color='#fac12e' className='w-[4vmin] h-[4vmin]' />
         <span>get in touch</span>
