@@ -45,7 +45,9 @@ const Footer = () => {
             </li>
             <li className='text-[1.8vmin] capitalize'>our services</li>
             <li className='text-[1.8vmin] capitalize'>portfolio</li>
-            <li className='text-[1.8vmin] capitalize'>contact us</li>
+            <li className='text-[1.8vmin] capitalize'>
+              <Link href='/contact-us'>contact us</Link>
+            </li>
           </ul>
         </div>
         <div className='flex flex-col items-start gap-[1.7vmin] max-w-[30vmin]'>

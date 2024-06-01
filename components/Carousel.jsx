@@ -78,7 +78,7 @@ const Carousel = () => {
                   </p>
                 </div>
                 <Link
-                  href='/contact'
+                  href='/contact-us'
                   className='bg-gradient-to-r from-blue-600 to-blue-900 text-neutral-100 text-[1.8vmax] min-w-[24vmin] py-[1.3vmin] rounded-full capitalize text-center shadow'
                 >
                   hire us
@@ -103,7 +103,7 @@ const Carousel = () => {
                     ullamco laboris nisi ut aliquip ex ea commodo consequat
                   </p>
                   <Link
-                    href='/contact'
+                    href='/contact-us'
                     className='bg-gradient-to-r from-[#677DD8] to-[#1C79AF] text-neutral-100 text-[1.8vmax] min-w-[24vmin] py-[1.3vmin] rounded-full capitalize text-center shadow'
                   >
                     hire us
@@ -137,7 +137,7 @@ const Carousel = () => {
                     laboris nisi ut aliquip ex ea commodo consequat
                   </p>
                   <Link
-                    href='/contact'
+                    href='/contact-us'
                     className='bg-gradient-to-r from-[#F96CE1] to-[#5C4298] text-neutral-100 text-[1.8vmax] min-w-[24vmin] py-[1.3vmin] rounded-full capitalize text-center shadow'
                   >
                     hire us
@@ -172,7 +172,7 @@ const Carousel = () => {
                     commodo consequat
                   </p>
                   <Link
-                    href='/contact'
+                    href='/contact-us'
                     className='bg-gradient-to-r from-[#49C6BC] to-[#447E8F] text-neutral-100 text-[1.8vmax] min-w-[24vmin] py-[1.3vmin] rounded-full capitalize text-center shadow'
                   >
                     hire us
@@ -206,7 +206,7 @@ const Carousel = () => {
                     aliqua.
                   </p>
                   <Link
-                    href='/contact'
+                    href='/contact-us'
                     className='bg-gradient-to-br from-[#A09AF3] to-[#7330AC] text-neutral-100 text-[1.8vmax] min-w-[24vmin] py-[1.3vmin] rounded-full capitalize text-center shadow'
                   >
                     hire us

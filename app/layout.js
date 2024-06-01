@@ -64,7 +64,7 @@ export const metadata = {
     siteName: "CodeNCreativity",
     images: [
       {
-        url: "/favicon-32x32.png",
+        url: "/android-chrome-512x512.png",
         width: 800,
         height: 600,
       },

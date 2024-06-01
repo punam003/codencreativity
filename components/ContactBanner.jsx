@@ -11,7 +11,7 @@ const ContactBanner = () => {
           <span className='text-[#FF6B00]'>Together ?</span>
         </h1>
         <Link
-          href='/contact'
+          href='/contact-us'
           className='capitalize bg-[#ECECEC] px-[2.2vmin] py-[1.6vmin] font-semibold text-[2.5vmin] flex items-center gap-2'
         >
           Let&apos;s Talk Our Expertise
