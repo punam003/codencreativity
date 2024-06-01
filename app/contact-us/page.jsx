@@ -2,6 +2,7 @@ import LottieComponents from "@/components/LottieComponents";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 import clockAnimation from "../../assets/clock-animation.json";
+import Image from "next/image";
 
 export const metadata = {
   title: "CodeNCreativity | Contact us",
@@ -17,7 +18,13 @@ export default function ContactUS() {
         <div className="flex gap-[2vmin] justify-evenly">
           <div className="flex flex-col items-center justify-center gap-[2vmin] bg-neutral-100 bg-opacity-65 min-w-[35vmin] py-[3vmin] rounded-2xl">
             <div className="flex flex-col items-center justify-center gap-[1.5vmin]">
-              <span className="w-16 h-16 rounded-full bg-neutral-600"></span>
+              <Image
+                src="/call_6716671.png"
+                alt="call"
+                width={150}
+                height={150}
+                className="max-w-[6vmin] rounded-full"
+              />
               <h2 className="font-semibold text-neutral-900 text-[2.5vmin] capitalize">
                 phone
               </h2>
@@ -33,7 +40,13 @@ export default function ContactUS() {
           </div>
           <div className="flex flex-col items-center justify-center gap-[2vmin] bg-neutral-100 bg-opacity-65 min-w-[35vmin] py-[3vmin] rounded-2xl">
             <div className="flex flex-col items-center justify-center gap-[1.5vmin]">
-              <span className="w-16 h-16 rounded-full bg-neutral-600"></span>
+              <Image
+                src="/email_6716666.png"
+                alt="email"
+                width={150}
+                height={150}
+                className="max-w-[6vmin] rounded-full"
+              />
               <h2 className="font-semibold text-neutral-900 text-[2.5vmin] capitalize">
                 email us
               </h2>
@@ -49,9 +62,15 @@ export default function ContactUS() {
           </div>
           <div className="flex flex-col items-center justify-center gap-[2vmin] bg-neutral-100 bg-opacity-65 min-w-[35vmin] py-[3vmin] rounded-2xl">
             <div className="flex flex-col items-center justify-center gap-[1.5vmin]">
-              <span className="w-16 h-16 rounded-full bg-neutral-600"></span>
+              <Image
+                src="/location_6716616.png"
+                alt="address"
+                width={150}
+                height={150}
+                className="max-w-[6vmin] rounded-full"
+              />
               <h2 className="font-semibold text-neutral-900 text-[2.5vmin] capitalize">
-                email us
+                address
               </h2>
             </div>
             <div className="flex flex-col items-center justify-center gap-[1vmin]">

@@ -1,4 +1,5 @@
 import AcknowledgeCard from "@/components/AcknowledgeCard";
+import TeamCard from "@/components/TeamCard";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -33,8 +34,20 @@ export default function AboutUs() {
       title: "projects",
     },
   ];
+  const members = [
+    {
+      img: "punam.jpg",
+      name: "dipannita sarkar",
+      designation: "Founder & Designer (CEO)",
+    },
+    {
+      img: "aniket.jpg",
+      name: "aniket saha",
+      designation: "Co-Founder & Developer",
+    },
+  ];
   return (
-    <main className="mt-[10vmin]">
+    <main className="mt-[12vmin]">
       <header className="flex flex-col justify-center gap-[5vmin] m-[3vmax]">
         <div className="flex items-center justify-center gap-[3.5vmin]">
           <div>
@@ -76,13 +89,23 @@ export default function AboutUs() {
           ))}
         </div>
       </header>
-      <section className="bg-[url('/client-serve-bg.png')] bg-no-repeat bg-cover bg-center">
-        <div className="flex flex-col">
-          <div>
-            <h2>our vision</h2>
+      <section className="bg-[url('/client-serve-bg.png')] bg-no-repeat bg-cover bg-center flex flex-col items-center justify-evenly gap-[4vmin] py-[3vmax]">
+        <div className="flex flex-col items-center">
+          <h1 className="capitalize font-bold text-[2.5vmax]">
+            Serving Our Clients For Over This Years
+          </h1>
+          <p className="text-[2vmin]">
+            We Are A Group Of Professional Developers & Marketing Experts
+          </p>
+        </div>
+        <div className="flex flex-col items-start bg-white self-start px-[4vmin] py-[2vmin] rounded-lg mx-[3vmax] shadow-lg">
+          <div className="bg-[#100A48] px-[3vmin] py-[1.5vmin] rounded-xl">
+            <h2 className="capitalize font-bold text-[1.8vmax] text-neutral-100">
+              our vision
+            </h2>
           </div>
-          <div className="flex items-center">
-            <p className="text-[2vmin] max-w-[15vmax]">
+          <div className="flex items-center gap-[4.5vmin]">
+            <p className="text-[2vmin] max-w-[25vmax]">
               Our vision is to revolutionize the world through innovative
               development solutions. We aspire to be the leading force in
               shaping the future of technology, infrastructure, and sustainable
@@ -94,12 +117,43 @@ export default function AboutUs() {
             <Image
               src="/our-vision-1.png"
               alt="our vision"
-              width={500}
-              height={350}
-              className="max-w-[45vmax]"
+              width={450}
+              height={450}
+              className="max-w-[25vmax]"
             />
           </div>
         </div>
+        <div className="flex flex-col items-start bg-white self-end px-[4vmin] py-[2vmin] rounded-lg mx-[3vmax] shadow-lg">
+          <div className="bg-[#100A48] px-[3vmin] py-[1.5vmin] rounded-xl">
+            <h2 className="capitalize font-bold text-[1.8vmax] text-neutral-100">
+              our vision
+            </h2>
+          </div>
+          <div className="flex items-center gap-[4.5vmin]">
+            <p className="text-[2vmin] max-w-[25vmax]">
+              Our mission is to envision, design, and construct innovative
+              spaces that inspire communities and elevate living standards. With
+              a commitment to sustainability, excellence, and collaboration, we
+              strive to transform landscapes and enrich lives through
+              forward-thinking development solutions.
+            </p>
+            <Image
+              src="/our-vision-2.png"
+              alt="our vision"
+              width={450}
+              height={450}
+              className="max-w-[25vmax]"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col justify-evenly gap-[6vmin] items-center m-[3vmax] overflow-hidden">
+        <h1 className="capitalize text-[4vmin] font-bold text-gray-800">
+          Meet Our Creative Team Members
+        </h1>
+        {members.map((item, index) => (
+          <TeamCard member={item} key={index} index={index} />
+        ))}
       </section>
     </main>
   );

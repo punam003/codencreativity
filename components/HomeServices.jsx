@@ -2,7 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion";
 
-function Counter({ value, direction = "up" }) {
+export function Counter({ value, direction = "up" }) {
   const ref = useRef(null);
   const motionValue = useMotionValue(direction === "down" ? value : 0);
   const springValue = useSpring(motionValue, {

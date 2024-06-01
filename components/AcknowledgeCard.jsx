@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Counter } from "./HomeServices";
 
 const AcknowledgeCard = ({ cardData }) => {
   return (
@@ -12,7 +13,10 @@ const AcknowledgeCard = ({ cardData }) => {
         className="max-w-[6vmax]"
       />
       <div className="flex flex-col items-center">
-        <h2 className="text-[3vmin] font-bold">{cardData.count}+</h2>
+        <h2 className="text-[3vmin] font-bold">
+          {" "}
+          <Counter value={cardData.count} />+
+        </h2>
         <h3 className="font-medium text-[2.5vmin] capitalize">
           {cardData.title}
         </h3>
