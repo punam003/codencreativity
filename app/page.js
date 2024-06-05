@@ -145,7 +145,13 @@ export default function Home() {
         <div className="flex items-stretch flex-wrap justify-evenly self-stretch">
           <div className="flex flex-col justify-evenly items-center bg-white min-w-[20vmax] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]">
             <div className="flex items-center gap-[1.7vmin]">
-              <span className="w-12 h-12 rounded-full bg-gray-500"></span>
+              <Image
+                src="/seo_273564.png"
+                alt="seo"
+                width={60}
+                height={60}
+                className="w-12 h-12 rounded-full"
+              />
               <h3 className="text-[2.7vmin] font-bold">SEO</h3>
             </div>
             <ul className="grid grid-cols-2 list-disc items-center gap-x-[8vmin]">
@@ -164,7 +170,13 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-evenly items-center bg-white min-w-[20vmax] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]">
             <div className="flex items-center gap-[1.7vmin]">
-              <span className="w-12 h-12 rounded-full bg-gray-500"></span>
+              <Image
+                src="/Mobile App Development.png"
+                alt="seo"
+                width={60}
+                height={60}
+                className="w-12 h-12 rounded-full"
+              />
               <h3 className="text-[2.7vmin] font-bold max-w-[10vmax]">
                 Mobile App Development
               </h3>
@@ -185,7 +197,13 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-evenly items-center bg-white min-w-[20vmax] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]">
             <div className="flex items-center gap-[1.7vmin]">
-              <span className="w-12 h-12 rounded-full bg-gray-500"></span>
+              <Image
+                src="/UI Design_1413315.png"
+                alt="seo"
+                width={60}
+                height={60}
+                className="w-12 h-12 rounded-full"
+              />
               <h3 className="text-[2.7vmin] font-bold max-w-[10vmax]">
                 UI Design
               </h3>
@@ -206,7 +224,13 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-evenly items-center bg-white min-w-[20vmax] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]">
             <div className="flex items-center gap-[1.7vmin]">
-              <span className="w-12 h-12 rounded-full bg-gray-500"></span>
+              <Image
+                src="/Graphics Designing_780769.png"
+                alt="seo"
+                width={60}
+                height={60}
+                className="w-12 h-12 rounded-full"
+              />
               <h3 className="text-[2.7vmin] font-bold max-w-[10vmax]">
                 Graphics Designing
               </h3>
@@ -227,7 +251,13 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-evenly items-center bg-white min-w-[20vmax] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]">
             <div className="flex items-center gap-[1.7vmin]">
-              <span className="w-12 h-12 rounded-full bg-gray-500"></span>
+              <Image
+                src="/Digital Marketing.png"
+                alt="seo"
+                width={60}
+                height={60}
+                className="w-12 h-12 rounded-full"
+              />
               <h3 className="text-[2.7vmin] font-bold max-w-[10vmax]">
                 Advance Digital Marketing
               </h3>
@@ -248,7 +278,13 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-evenly items-center bg-white min-w-[20vmax] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]">
             <div className="flex items-center gap-[1.7vmin]">
-              <span className="w-12 h-12 rounded-full bg-gray-500"></span>
+              <Image
+                src="/web_7358652.png"
+                alt="seo"
+                width={60}
+                height={60}
+                className="w-12 h-12 rounded-full"
+              />
               <h3 className="text-[2.7vmin] font-bold max-w-[10vmax]">
                 Website Design &amp; Development
               </h3>

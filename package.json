@@ -10,6 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "cloudinary": "^2.2.0",
     "framer-motion": "^11.2.6",
     "lottie-react": "^2.4.0",
     "next": "14.2.3",

@@ -26,3 +26,16 @@ body {
     text-wrap: balance;
   }
 }
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(
+    177.8deg,
+    #aac4e3 0%,
+    #dde5f2 14.08%,
+    #dae2f1 27.91%,
+    #c1cbe3 42.23%,
+    #bdbbd8 59.62%,
+    #b4aacd 76.96%,
+    #f7cfd7 95.22%
+  );
+}
