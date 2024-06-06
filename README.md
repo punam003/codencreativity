@@ -45,6 +45,42 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/punam003/codencreativity.git
+```
+
+Go to the project directory
+
+```bash
+  cd codencreativity
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`NEXT_PUBLIC_CLOUDINARY_API_KEY`
+
+`NEXT_PUBLIC_CLOUDINARY_API_SECRET`
+
+`NEXT_PUBLIC_MONGO_URI`
+
 ## Conclusion
 
 We are committed to delivering excellence and creativity in every project we undertake. Let Code N Creativity be your partner in navigating the digital landscape and achieving success.

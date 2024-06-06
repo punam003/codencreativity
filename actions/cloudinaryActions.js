@@ -14,6 +14,9 @@ export async function uploadImage(image, publicId) {
 }
 
 export async function getImage(query) {
-  const img = await cloudinary.url(query);
+  const img = await new Promise((resolve, reject) => {
+    const url = cloudinary.url(query);
+    resolve(url);
+  });
   return img;
 }

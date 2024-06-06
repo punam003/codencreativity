@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+          <url>
+            <loc>https://codencreativity-o4ek.vercel.appapp/layout</loc>
+            <lastmod>2024-06-06T12:25:06.874Z</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+          </url>
+        
+          <url>
+            <loc>https://codencreativity-o4ek.vercel.appapp/loading</loc>
+            <lastmod>2024-06-06T12:25:06.875Z</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+          </url>
+        
+          <url>
+            <loc>https://codencreativity-o4ek.vercel.appapp/page</loc>
+            <lastmod>2024-06-06T12:25:06.875Z</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+          </url>
+        
+          <url>
+            <loc>https://codencreativity-o4ek.vercel.appapp/about-us/pagex</loc>
+            <lastmod>2024-06-06T12:25:06.875Z</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+          </url>
+        
+          <url>
+            <loc>https://codencreativity-o4ek.vercel.appapp/contact-us/pagex</loc>
+            <lastmod>2024-06-06T12:25:06.875Z</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+          </url>
+        
+          <url>
+            <loc>https://codencreativity-o4ek.vercel.appapp/portfolio/pagex</loc>
+            <lastmod>2024-06-06T12:25:06.875Z</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+          </url>
+        
+          <url>
+            <loc>https://codencreativity-o4ek.vercel.appapp/our-services/pagex</loc>
+            <lastmod>2024-06-06T12:25:06.875Z</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.7</priority>
+          </url>
+        
+  </urlset>

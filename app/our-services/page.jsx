@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata = {
+  title: "CodeNCreativity | Our Services",
+};
+
 export default function OurService() {
   const services = [
     {

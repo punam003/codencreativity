@@ -13,6 +13,7 @@ import HomeServices from "@/components/HomeServices";
 import ClientMarquee from "@/components/ClientMarquee";
 import BounceCut from "@/components/BounceCut";
 import ContactForm from "@/components/ContactForm";
+import PortfolioCard from "@/components/PortfolioCard";
 
 const crimsonText = Crimson_Text({
   subsets: ["latin"],
@@ -144,7 +145,7 @@ export default function Home() {
           services we provide
         </h1>
         <div className='flex items-stretch flex-wrap justify-evenly self-stretch'>
-          <div className='flex flex-col justify-evenly items-center bg-white min-w-[20vmax] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]'>
+          <div className='flex flex-col justify-evenly items-center bg-white max-w-[20vmax] px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]'>
             <div className='flex items-center gap-[1.7vmin]'>
               <Image
                 src='/seo_273564.png'
@@ -155,7 +156,7 @@ export default function Home() {
               />
               <h3 className='text-[2.7vmin] font-bold'>SEO</h3>
             </div>
-            <ul className='grid grid-cols-2 list-disc items-center gap-x-[8vmin]'>
+            <ul className='flex flex-wrap justify-center list-disc items-center gap-x-[4vmin]'>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
@@ -169,7 +170,7 @@ export default function Home() {
               learn more
             </button>
           </div>
-          <div className='flex flex-col justify-evenly items-center bg-white min-w-[20vmax] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]'>
+          <div className='flex flex-col justify-evenly items-center bg-white max-w-[20vmax] px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]'>
             <div className='flex items-center gap-[1.7vmin]'>
               <Image
                 src='/Mobile App Development.png'
@@ -182,7 +183,7 @@ export default function Home() {
                 Mobile App Development
               </h3>
             </div>
-            <ul className='grid grid-cols-2 list-disc items-center gap-x-[8vmin]'>
+            <ul className='flex flex-wrap justify-center list-disc items-center gap-x-[4vmin]'>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
@@ -196,7 +197,7 @@ export default function Home() {
               learn more
             </button>
           </div>
-          <div className='flex flex-col justify-evenly items-center bg-white min-w-[20vmax] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]'>
+          <div className='flex flex-col justify-evenly items-center bg-white max-w-[20vmax] px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]'>
             <div className='flex items-center gap-[1.7vmin]'>
               <Image
                 src='/UI Design_1413315.png'
@@ -209,7 +210,7 @@ export default function Home() {
                 UI Design
               </h3>
             </div>
-            <ul className='grid grid-cols-2 list-disc items-center gap-x-[8vmin]'>
+            <ul className='flex flex-wrap justify-center list-disc items-center gap-x-[4vmin]'>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
@@ -223,7 +224,7 @@ export default function Home() {
               learn more
             </button>
           </div>
-          <div className='flex flex-col justify-evenly items-center bg-white min-w-[20vmax] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]'>
+          <div className='flex flex-col justify-evenly items-center bg-white max-w-[20vmax] px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]'>
             <div className='flex items-center gap-[1.7vmin]'>
               <Image
                 src='/Graphics Designing_780769.png'
@@ -236,7 +237,7 @@ export default function Home() {
                 Graphics Designing
               </h3>
             </div>
-            <ul className='grid grid-cols-2 list-disc items-center gap-x-[8vmin]'>
+            <ul className='flex flex-wrap justify-center list-disc items-center gap-x-[4vmin]'>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
@@ -250,7 +251,7 @@ export default function Home() {
               learn more
             </button>
           </div>
-          <div className='flex flex-col justify-evenly items-center bg-white min-w-[20vmax] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]'>
+          <div className='flex flex-col justify-evenly items-center bg-white max-w-[20vmax] px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]'>
             <div className='flex items-center gap-[1.7vmin]'>
               <Image
                 src='/Digital Marketing.png'
@@ -263,7 +264,7 @@ export default function Home() {
                 Advance Digital Marketing
               </h3>
             </div>
-            <ul className='grid grid-cols-2 list-disc items-center gap-x-[8vmin]'>
+            <ul className='flex flex-wrap justify-center list-disc items-center gap-x-[4vmin]'>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
@@ -277,7 +278,7 @@ export default function Home() {
               learn more
             </button>
           </div>
-          <div className='flex flex-col justify-evenly items-center bg-white min-w-[20vmax] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]'>
+          <div className='flex flex-col justify-evenly items-center bg-white max-w-[20vmax] px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]'>
             <div className='flex items-center gap-[1.7vmin]'>
               <Image
                 src='/web_7358652.png'
@@ -290,7 +291,7 @@ export default function Home() {
                 Website Design &amp; Development
               </h3>
             </div>
-            <ul className='grid grid-cols-2 list-disc items-center gap-x-[8vmin]'>
+            <ul className='flex flex-wrap justify-center list-disc items-center gap-x-[4vmin]'>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
               <li className='text-[2.5vmin] font-medium'>UI Design</li>
@@ -358,19 +359,25 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className='flex flex-col items-center mx-[3vmax]'>
+      <div className='flex flex-col items-center mx-[3vmax] gap-[3vmin]'>
         <p className='font-medium text-[3vmin] uppercase text-neutral-600'>
           our projects
         </p>
         <h1 className='bg-gradient-to-r from-[#0C7FFE] to-[#000000] text-transparent bg-clip-text font-extrabold text-[3vmax] text-center capitalize'>
           Our Portfolio of Success Stories
         </h1>
-        <button
-          type='button'
+        <div className='flex justify-evenly gap-[3vmin]'>
+          <PortfolioCard imageUrl={"/fipezo.png"} width={20} />
+          <PortfolioCard imageUrl={"/animexhub.png"} width={20} />
+          <PortfolioCard imageUrl={"/rabinsphotography.png"} width={20} />
+          <PortfolioCard imageUrl={"/virtualparadise.png"} width={20} />
+        </div>
+        <Link
+          href='/portfolio'
           className='capitalize hover:shadow-[0px_4px_6px_0px_#00000040_inset] text-neutral-800 bg-opacity-40 bg-white text-[3vmin] rounded-full px-[3vmin] py-[1.5vmin] font-bold'
         >
           all projects
-        </button>
+        </Link>
       </div>
       <div className='flex flex-col items-center gap-[5vmin]'>
         <h1 className='bg-gradient-to-r from-[#0C7FFE] to-[#000000] text-transparent bg-clip-text font-extrabold text-[3vmax] text-center capitalize'>

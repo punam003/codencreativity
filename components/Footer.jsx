@@ -46,7 +46,9 @@ const Footer = () => {
             <li className="text-[1.8vmin] capitalize">
               <Link href="/our-services">our services</Link>
             </li>
-            <li className="text-[1.8vmin] capitalize">portfolio</li>
+            <li className="text-[1.8vmin] capitalize">
+              <Link href="/portfolio">portfolio</Link>
+            </li>
             <li className="text-[1.8vmin] capitalize">
               <Link href="/contact-us">contact us</Link>
             </li>
@@ -61,20 +63,32 @@ const Footer = () => {
             and exclusive offers.
           </p>
           <div className="flex items-center gap-[1.5vmin]">
-            <Image
-              src="/instagram.png"
-              width={200}
-              height={70}
-              alt="insta"
-              className="max-w-[3vmax] max-h-[3vmax] border border-neutral-100 rounded-full p-[0.5vmin]"
-            />
-            <Image
-              src="/pinterest.png"
-              width={200}
-              height={70}
-              alt="insta"
-              className="max-w-[3vmax] max-h-[3vmax] border border-neutral-100 rounded-full p-[0.5vmin]"
-            />
+            <Link
+              href="https://www.instagram.com/code_n_creativity?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              referrerPolicy="no-referrer"
+            >
+              <Image
+                src="/instagram.png"
+                width={200}
+                height={70}
+                alt="insta"
+                className="max-w-[3vmax] max-h-[3vmax] border border-neutral-100 rounded-full p-[0.5vmin]"
+              />
+            </Link>
+            <Link
+              href="https://pin.it/4GJBYFzH0"
+              target="_blank"
+              referrerPolicy="no-referrer"
+            >
+              <Image
+                src="/pinterest.png"
+                width={200}
+                height={70}
+                alt="insta"
+                className="max-w-[3vmax] max-h-[3vmax] border border-neutral-100 rounded-full p-[0.5vmin]"
+              />
+            </Link>
             <Image
               src="/upwork.png"
               width={200}
@@ -82,13 +96,19 @@ const Footer = () => {
               alt="insta"
               className="max-w-[3vmax] max-h-[3vmax] border border-neutral-100 rounded-full p-[0.5vmin]"
             />
-            <Image
-              src="/linkedin.png"
-              width={200}
-              height={70}
-              alt="insta"
-              className="max-w-[3vmax] max-h-[3vmax] border border-neutral-100 rounded-full p-[0.5vmin]"
-            />
+            <Link
+              href="https://www.linkedin.com/in/code-n-creativity-189087307?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BCeUc9jm9Sb6kbAIADmRmmg%3D%3D"
+              target="_blank"
+              referrerPolicy="no-referrer"
+            >
+              <Image
+                src="/linkedin.png"
+                width={200}
+                height={70}
+                alt="insta"
+                className="max-w-[3vmax] max-h-[3vmax] border border-neutral-100 rounded-full p-[0.5vmin]"
+              />
+            </Link>
           </div>
         </div>
       </footer>

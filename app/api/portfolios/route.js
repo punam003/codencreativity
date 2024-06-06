@@ -6,7 +6,7 @@ export async function POST(req) {
   try {
     const data = await req.formData();
     const cover = data.get("cover");
-    const category = data.get("category");
+    const category = data.getAll("category");
     await connectDb();
     const uploadedImage = await uploadImage(cover, cover.name);
     const newPortFolio = new Portfolio({
