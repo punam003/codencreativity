@@ -23,8 +23,11 @@ export async function POST(req) {
 
 export async function GET(req) {
   try {
+    const url = new URL(req.url);
+    const params = new URLSearchParams(url.searchParams);
+    const limit = params.get("limit");
     await connectDb();
-    const portfolios = await Portfolio.find({});
+    const portfolios = await Portfolio.find({}).limit(limit).exec();
     return Response.json(portfolios, { status: 200 });
   } catch (error) {
     console.log(error);
