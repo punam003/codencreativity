@@ -4,9 +4,9 @@ import PortfolioCategory from "@/components/PortfolioCategory";
 export const metadata = {
   title: "CodeNCreativity | Portfolio",
 };
-async function getPortfolios() {
+async function getPortfolios(cat) {
   try {
-    const res = await fetch(`${process.env.API_URI}/portfolios?limit=12`);
+    const res = await fetch(`${process.env.API_URI}/portfolios/${cat}`);
     const data = await res.json();
     return data;
   } catch (error) {
@@ -14,8 +14,8 @@ async function getPortfolios() {
   }
 }
 
-export default async function Portfolio() {
-  const portFolios = await getPortfolios();
+export default async function PortfolioCategory() {
+  const portFolios = [];
 
   return (
     <main className="mt-[12vmin] flex flex-col items-center gap-[4vmin] mx-[3vmax]">

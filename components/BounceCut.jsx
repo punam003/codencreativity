@@ -11,7 +11,7 @@ const transitionValues = {
 const BounceCut = ({ cutOutData }) => {
   return (
     <motion.div
-      className='w-[12vmax] h-[12vmax] flex flex-col items-center bg-white rounded-full justify-center odd:rounded-tr-none even:rounded-bl-none relative shadow-lg even:self-end odd:self-start gap-[1vmin]'
+      className='w-[15vmax] lg:w-[12vmax] h-[15vmax] lg:h-[12vmax] flex flex-col items-center bg-white rounded-full justify-center odd:rounded-tr-none even:rounded-bl-none relative shadow-lg even:self-end odd:self-start gap-[1vmin]'
       transition={{
         y: transitionValues,
         opacity: transitionValues,

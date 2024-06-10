@@ -45,7 +45,7 @@ const Carousel = () => {
 
   return (
     <div className='w-full overflow-hidden mt-[10vmin]'>
-      <div className='relative min-h-[85vh]'>
+      <div className='relative min-h-[60vh] lg:min-h-[85vh]'>
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={page}

@@ -8,8 +8,31 @@ const ContactForm = () => {
   const [phone, setPhone] = useState("");
   const [subject, setSubject] = useState("");
 
+  const handelSubmit = async (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    try {
+      const res = await fetch(`/api/contact`, {
+        method: "POST",
+        body: JSON.stringify({
+          fullname: fullname,
+          email: email,
+          phone: phone,
+          subject: subject,
+        }),
+      });
+      const data = await res.json();
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
-    <form className='min-w-[20vmax] min-h-[20vmax] bg-neutral-100 rounded-xl relative z-10 flex flex-col items-start px-[2.5vmin] py-[2vmin] gap-[1.5vmin] justify-evenly self-stretch h-full'>
+    <form
+      className='min-w-[20vmax] min-h-[20vmax] bg-neutral-100 rounded-xl relative z-10 flex flex-col items-start px-[2.5vmin] py-[2vmin] gap-[1.5vmin] justify-evenly self-stretch h-full'
+      onSubmit={handelSubmit}
+    >
       <div>
         <h2 className='capitalize font-bold text-neutral-900 text-[2.77vmin]'>
           contact now
