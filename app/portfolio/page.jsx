@@ -1,5 +1,5 @@
 import PortfolioCard from "@/components/PortfolioCard";
-import PortfolioCategory from "@/components/PortfolioCategory";
+import PortfolioCategoryComponents from "@/components/PortfolioCategoryComponents";
 
 export const metadata = {
   title: "CodeNCreativity | Portfolio",
@@ -26,7 +26,7 @@ export default async function Portfolio() {
         <p className="text-gray-700 text-[2.3vmin] capitalize">portfolio</p>
       </div>
       <div className="my-[2.3vmin] max-w-[75vmax]">
-        <PortfolioCategory />
+        <PortfolioCategoryComponents />
       </div>
       <div className="flex flex-wrap justify-evenly gap-y-[3vmax]">
         {portFolios.map((item) => (

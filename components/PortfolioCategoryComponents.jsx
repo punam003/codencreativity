@@ -1,6 +1,6 @@
 import React from "react";
 
-const PortfolioCategory = () => {
+const PortfolioCategoryComponents = () => {
   const buttons = [
     "all",
     "business website",
@@ -24,4 +24,4 @@ const PortfolioCategory = () => {
   );
 };
 
-export default PortfolioCategory;
+export default PortfolioCategoryComponents;
