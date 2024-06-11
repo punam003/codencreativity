@@ -11,18 +11,19 @@ const transitionValues = {
 const BounceCut = ({ cutOutData }) => {
   return (
     <motion.div
-      className='w-[15vmax] lg:w-[12vmax] h-[15vmax] lg:h-[12vmax] flex flex-col items-center bg-white rounded-full justify-center odd:rounded-tr-none even:rounded-bl-none relative shadow-lg even:self-end odd:self-start gap-[1vmin]'
+      className='w-[10vmax] md:w-[15vmax] lg:w-[12vmax] h-[10vmax] md:h-[15vmax] lg:h-[12vmax] flex flex-col items-center bg-white rounded-full justify-center odd:rounded-tr-none even:rounded-bl-none relative shadow-lg even:self-end odd:self-start gap-[1vmin]'
       transition={{
         y: transitionValues,
         opacity: transitionValues,
       }}
+      viewport={{ once: true }}
       whileInView={{
         y: ["-50%", "0%"],
         opacity: [0, 1],
       }}
     >
       {cutOutData.component}
-      <p className='text-center text-neutral-800 font-semibold mx-[1vmin]'>
+      <p className='text-center text-neutral-800 font-semibold mx-[1vmin] text-[2vmin]'>
         {cutOutData.title}
       </p>
       <span className='absolute top-0 left-0 bg-blue-600 w-[3.5vmax] h-[3.5vmax] rounded-full text-[2vmax] text-neutral-100 font-bold flex items-center justify-center'>

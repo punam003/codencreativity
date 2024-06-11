@@ -47,23 +47,23 @@ export default function AboutUs() {
     },
   ];
   return (
-    <main className="mt-[12vmin]">
-      <header className="flex flex-col justify-center gap-[5vmin] m-[3vmax]">
-        <div className="flex items-center justify-center gap-[3.5vmin]">
+    <main className='mt-[12vmin]'>
+      <header className='flex flex-col justify-center gap-[5vmin] m-[3vmax]'>
+        <div className='flex items-center justify-center gap-[3.5vmin]'>
           <div>
             <Image
-              src="/about-us-side-cover.png"
-              alt="about us"
+              src='/about-us-side-cover.png'
+              alt='about us'
               width={700}
               height={650}
-              className="min-w-[20vmax] max-w-[35vmax]"
+              className='min-w-[20vmax] max-w-[50vmax] lg:max-w-[35vmax]'
             />
           </div>
-          <div className="flex flex-col max-w-[40vmax] gap-[2vmin] items-start">
-            <h1 className="capitalize text-[4vmin] font-bold text-gray-700">
+          <div className='flex flex-col max-w-[40vmax] gap-[2vmin] items-start'>
+            <h1 className='capitalize text-[4vmin] font-bold text-gray-700'>
               about us
             </h1>
-            <p className="text-gray-700 text-[2.3vmin]">
+            <p className='text-gray-700 text-[2.3vmin]'>
               Established in 2022, Code N Creativity is a leading online
               marketing and software development company partnering with
               companies of various sizes all around the globe. Our commitment to
@@ -76,36 +76,36 @@ export default function AboutUs() {
               arrangement in one spot.
             </p>
             <Link
-              href="/contact-us"
-              className="capitalize hover:shadow-[0px_4px_6px_0px_#00000040_inset] text-neutral-800 bg-opacity-40 bg-white text-[2.3vmin] rounded-full px-[3vmin] py-[1.5vmin] font-bold"
+              href='/contact-us'
+              className='capitalize hover:shadow-[0px_4px_6px_0px_#00000040_inset] text-neutral-800 bg-opacity-40 bg-white text-[2.3vmin] rounded-full px-[3vmin] py-[1.5vmin] font-bold'
             >
               contact us
             </Link>
           </div>
         </div>
-        <div className="flex items-center justify-evenly">
+        <div className='flex items-center justify-evenly flex-wrap lg:flex-nowrap'>
           {acknowledgeData.map((item, index) => (
             <AcknowledgeCard cardData={item} key={index} />
           ))}
         </div>
       </header>
       <section className="bg-[url('/client-serve-bg.png')] bg-no-repeat bg-cover bg-center flex flex-col items-center justify-evenly gap-[4vmin] py-[3vmax]">
-        <div className="flex flex-col items-center">
-          <h1 className="capitalize font-bold text-[2.5vmax]">
+        <div className='flex flex-col items-center'>
+          <h1 className='capitalize font-bold text-[2.5vmax]'>
             Serving Our Clients For Over This Years
           </h1>
-          <p className="text-[2vmin]">
+          <p className='text-[2vmin]'>
             We Are A Group Of Professional Developers & Marketing Experts
           </p>
         </div>
-        <div className="flex flex-col items-start bg-white self-start px-[4vmin] py-[2vmin] rounded-lg mx-[3vmax] shadow-lg">
-          <div className="bg-[#100A48] px-[3vmin] py-[1.5vmin] rounded-xl">
-            <h2 className="capitalize font-bold text-[1.8vmax] text-neutral-100">
+        <div className='flex flex-col items-start bg-white self-start px-[4vmin] py-[2vmin] rounded-lg mx-[3vmax] shadow-lg'>
+          <div className='bg-[#100A48] px-[3vmin] py-[1.5vmin] rounded-xl'>
+            <h2 className='capitalize font-bold text-[1.8vmax] text-neutral-100'>
               our vision
             </h2>
           </div>
-          <div className="flex items-center gap-[4.5vmin]">
-            <p className="text-[2vmin] max-w-[25vmax]">
+          <div className='flex items-center gap-[4.5vmin]'>
+            <p className='text-[2vmin] max-w-[25vmax]'>
               Our vision is to revolutionize the world through innovative
               development solutions. We aspire to be the leading force in
               shaping the future of technology, infrastructure, and sustainable
@@ -115,22 +115,22 @@ export default function AboutUs() {
               progress globally.
             </p>
             <Image
-              src="/our-vision-1.png"
-              alt="our vision"
+              src='/our-vision-1.png'
+              alt='our vision'
               width={450}
               height={450}
-              className="max-w-[25vmax]"
+              className='max-w-[32vmax] lg:max-w-[25vmax]'
             />
           </div>
         </div>
-        <div className="flex flex-col items-start bg-white self-end px-[4vmin] py-[2vmin] rounded-lg mx-[3vmax] shadow-lg">
-          <div className="bg-[#100A48] px-[3vmin] py-[1.5vmin] rounded-xl">
-            <h2 className="capitalize font-bold text-[1.8vmax] text-neutral-100">
+        <div className='flex flex-col items-start bg-white self-end px-[4vmin] py-[2vmin] rounded-lg mx-[3vmax] shadow-lg'>
+          <div className='bg-[#100A48] px-[3vmin] py-[1.5vmin] rounded-xl'>
+            <h2 className='capitalize font-bold text-[1.8vmax] text-neutral-100'>
               our vision
             </h2>
           </div>
-          <div className="flex items-center gap-[4.5vmin]">
-            <p className="text-[2vmin] max-w-[25vmax]">
+          <div className='flex items-center gap-[4.5vmin]'>
+            <p className='text-[2vmin] max-w-[25vmax]'>
               Our mission is to envision, design, and construct innovative
               spaces that inspire communities and elevate living standards. With
               a commitment to sustainability, excellence, and collaboration, we
@@ -138,17 +138,17 @@ export default function AboutUs() {
               forward-thinking development solutions.
             </p>
             <Image
-              src="/our-vision-2.png"
-              alt="our vision"
+              src='/our-vision-2.png'
+              alt='our vision'
               width={450}
               height={450}
-              className="max-w-[25vmax]"
+              className='max-w-[32vmax] lg:max-w-[25vmax]'
             />
           </div>
         </div>
       </section>
-      <section className="flex flex-col justify-evenly gap-[6vmin] items-center m-[3vmax] overflow-hidden">
-        <h1 className="capitalize text-[4vmin] font-bold text-gray-800">
+      <section className='flex flex-col justify-evenly gap-[6vmin] items-center m-[3vmax] overflow-hidden'>
+        <h1 className='capitalize text-[4vmin] font-bold text-gray-800'>
           Meet Our Creative Team Members
         </h1>
         {members.map((item, index) => (

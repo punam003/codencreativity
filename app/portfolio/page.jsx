@@ -18,19 +18,19 @@ export default async function Portfolio() {
   const portFolios = await getPortfolios();
 
   return (
-    <main className="mt-[12vmin] flex flex-col items-center gap-[4vmin] mx-[3vmax]">
-      <div className="flex flex-col gap-[2vmin] items-center">
-        <h1 className="capitalize text-[4vmin] font-bold text-gray-700">
+    <main className='mt-[12vmin] flex flex-col items-center gap-[4vmin] mx-[3vmax]'>
+      <div className='flex flex-col gap-[2vmin] items-center'>
+        <h1 className='capitalize text-[4vmin] font-bold text-gray-700'>
           our recent work
         </h1>
-        <p className="text-gray-700 text-[2.3vmin] capitalize">portfolio</p>
+        <p className='text-gray-700 text-[2.3vmin] capitalize'>portfolio</p>
       </div>
-      <div className="my-[2.3vmin] max-w-[75vmax]">
-        <PortfolioCategoryComponents />
+      <div className='my-[2.3vmin] max-w-[75vmax]'>
+        <PortfolioCategoryComponents href={"/"} />
       </div>
-      <div className="flex flex-wrap justify-evenly gap-y-[3vmax]">
+      <div className='flex flex-wrap justify-evenly gap-y-[3vmax] self-stretch'>
         {portFolios.map((item) => (
-          <PortfolioCard imageUrl={`${item.cover}`} key={item._id} width={25} />
+          <PortfolioCard imageUrl={`${item.cover}`} key={item._id} width={20} />
         ))}
       </div>
     </main>

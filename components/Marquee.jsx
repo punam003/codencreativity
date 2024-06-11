@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Marquee = ({ texts }) => {
   return (
-    <div className='overflow-hidden w-full relative min-h-[20vh] flex items-center'>
+    <div className='overflow-hidden w-full relative min-h-[10vh] md:min-h-[20vh] flex items-center'>
       <motion.div
         className='flex items-center'
         initial={{ x: "0%" }}

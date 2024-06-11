@@ -37,12 +37,12 @@ export function Counter({ value, direction = "up" }) {
 const HomeServices = () => {
   return (
     <ul className='flex flex-col gap-[3.5vmin]'>
-      <li className='flex flex-col min-w-[25vmax]'>
+      <li className='flex flex-col min-w-[40vmax] md:min-w-[35vmax]'>
         <span className='font-semibold text-[2vmin]'>
           Website Development Service
         </span>
         <div className='w-full flex flex-col'>
-          <p className='self-end font-semibold'>
+          <p className='self-end font-semibold text-[2vmin]'>
             <Counter value={97} />%
           </p>
           <motion.span
@@ -53,12 +53,12 @@ const HomeServices = () => {
           ></motion.span>
         </div>
       </li>
-      <li className='flex flex-col min-w-[25vmax]'>
+      <li className='flex flex-col min-w-[40vmax] md:min-w-[35vmax]'>
         <span className='font-semibold text-[2vmin]'>
           Website Redesign Service
         </span>
         <div className='w-full flex flex-col'>
-          <p className='self-end font-semibold'>
+          <p className='self-end font-semibold text-[2vmin]'>
             <Counter value={88} />%
           </p>
           <motion.span
@@ -69,12 +69,12 @@ const HomeServices = () => {
           ></motion.span>
         </div>
       </li>
-      <li className='flex flex-col min-w-[25vmax]'>
+      <li className='flex flex-col min-w-[40vmax] md:min-w-[35vmax]'>
         <span className='font-semibold text-[2vmin]'>
           Website Redesign Service
         </span>
         <div className='w-full flex flex-col'>
-          <p className='self-end font-semibold'>
+          <p className='self-end font-semibold text-[2vmin]'>
             <Counter value={98} />%
           </p>
           <motion.span
@@ -85,12 +85,12 @@ const HomeServices = () => {
           ></motion.span>
         </div>
       </li>
-      <li className='flex flex-col min-w-[25vmax]'>
+      <li className='flex flex-col min-w-[40vmax] md:min-w-[35vmax]'>
         <span className='font-semibold text-[2vmin]'>
           Website Redesign Service
         </span>
         <div className='w-full flex flex-col'>
-          <p className='self-end font-semibold'>
+          <p className='self-end font-semibold text-[2vmin]'>
             <Counter value={95} />%
           </p>
           <motion.span
@@ -101,12 +101,12 @@ const HomeServices = () => {
           ></motion.span>
         </div>
       </li>
-      <li className='flex flex-col min-w-[25vmax]'>
+      <li className='flex flex-col min-w-[40vmax] md:min-w-[35vmax]'>
         <span className='font-semibold text-[2vmin]'>
           Website Redesign Service
         </span>
         <div className='w-full flex flex-col'>
-          <p className='self-end font-semibold'>
+          <p className='self-end font-semibold text-[2vmin]'>
             <Counter value={92} />%
           </p>
           <motion.span

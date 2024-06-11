@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const ClientMarquee = ({ images }) => {
   return (
-    <div className="overflow-hidden w-[90vw] relative min-h-[20vh] flex items-center gap-[5vmin]">
+    <div className='overflow-hidden w-[90vw] relative md:min-h-[20vh] flex items-center gap-[5vmin]'>
       <motion.div
-        className="flex items-center"
+        className='flex items-center'
         initial={{ x: "0%" }}
         animate={{ x: "-100%" }}
         transition={{
@@ -17,21 +17,21 @@ const ClientMarquee = ({ images }) => {
           repeatType: "loop",
         }}
       >
-        <div className="flex items-center gap-[5vmin]">
+        <div className='flex items-center gap-[5vmin]'>
           {images.map((img, index) => (
             <Image
               key={index}
               src={`/${img}`}
-              alt="client logo"
+              alt='client logo'
               width={600}
               height={300}
-              className="max-w-[15vmax]"
+              className='max-w-[8vmax] md:max-w-[15vmax]'
             />
           ))}
         </div>
       </motion.div>
       <motion.div
-        className="flex items-center"
+        className='flex items-center'
         initial={{ x: "0%" }}
         animate={{ x: "-100%" }}
         transition={{
@@ -41,15 +41,15 @@ const ClientMarquee = ({ images }) => {
           repeatType: "loop",
         }}
       >
-        <div className="flex items-center gap-[5vmin]">
+        <div className='flex items-center gap-[5vmin]'>
           {images.map((img, index) => (
             <Image
               key={index}
               src={`/${img}`}
-              alt="client logo"
+              alt='client logo'
               width={600}
               height={300}
-              className="max-w-[15vmax]"
+              className='max-w-[8vmax] md:max-w-[15vmax]'
             />
           ))}
         </div>

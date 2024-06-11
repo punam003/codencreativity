@@ -2,7 +2,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { Crimson_Text } from "next/font/google";
 import Image from "next/image";
 
@@ -45,7 +44,7 @@ const Carousel = () => {
 
   return (
     <div className='w-full overflow-hidden mt-[10vmin]'>
-      <div className='relative min-h-[60vh] lg:min-h-[85vh]'>
+      <div className='relative min-h-[40vh] md:min-h-[60vh] lg:min-h-[85vh]'>
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={page}
@@ -93,7 +92,7 @@ const Carousel = () => {
                 }
               >
                 <div className='flex flex-col items-start gap-[4vmin] max-w-[60%]'>
-                  <h1 className='capitalize text-[4vmax] font-bold text-neutral-100 text-center'>
+                  <h1 className='capitalize text-[2.5vmax] md:text-[4vmax] font-bold text-neutral-100 text-center'>
                     We Create Website For You
                   </h1>
                   <p className='text-[1.5vmax] text-neutral-100'>
@@ -104,7 +103,7 @@ const Carousel = () => {
                   </p>
                   <Link
                     href='/contact-us'
-                    className='bg-gradient-to-r from-[#677DD8] to-[#1C79AF] text-neutral-100 text-[1.8vmax] min-w-[24vmin] py-[1.3vmin] rounded-full capitalize text-center shadow'
+                    className='bg-gradient-to-r from-[#677DD8] to-[#1C79AF] text-neutral-100 text-[1.2vmax] md:text-[1.8vmax] min-w-[12vmin] md:min-w-[24vmin] py-[0.65vmin] md:py-[1.3vmin] rounded-full capitalize text-center shadow'
                   >
                     hire us
                   </Link>
@@ -115,7 +114,7 @@ const Carousel = () => {
                     alt='carousel 2nd'
                     width={450}
                     height={225}
-                    className='min-w-[40vmax] max-w-[40vmax] drop-shadow-2xl'
+                    className='min-w-[30vmax] md:min-w-[40vmax] max-w-[30vmax] md:max-w-[40vmax] drop-shadow-2xl'
                   />
                 </div>
               </div>
@@ -128,7 +127,7 @@ const Carousel = () => {
                 }
               >
                 <div className='flex flex-col items-start gap-[4vmin] max-w-[60%]'>
-                  <h1 className='capitalize text-[4vmax] font-bold text-neutral-100 text-center'>
+                  <h1 className='capitalize text-[2.5vmax] md:text-[4vmax] font-bold text-neutral-100 text-center'>
                     Crafting Dreams Into Reality
                   </h1>
                   <p className='text-[1.5vmax] text-neutral-100'>
@@ -138,7 +137,7 @@ const Carousel = () => {
                   </p>
                   <Link
                     href='/contact-us'
-                    className='bg-gradient-to-r from-[#F96CE1] to-[#5C4298] text-neutral-100 text-[1.8vmax] min-w-[24vmin] py-[1.3vmin] rounded-full capitalize text-center shadow'
+                    className='bg-gradient-to-r from-[#F96CE1] to-[#5C4298] text-neutral-100 text-[1.2vmax] md:text-[1.8vmax] min-w-[12vmin] md:min-w-[24vmin] py-[0.65vmin] md:py-[1.3vmin] rounded-full capitalize text-center shadow'
                   >
                     hire us
                   </Link>
@@ -149,7 +148,7 @@ const Carousel = () => {
                     alt='carousel 3rd'
                     width={450}
                     height={225}
-                    className='min-w-[40vmax] max-w-[40vmax] drop-shadow-2xl'
+                    className='min-w-[30vmax] md:min-w-[40vmax] max-w-[30vmax] md:max-w-[40vmax] drop-shadow-2xl'
                   />
                 </div>
               </div>
@@ -162,7 +161,7 @@ const Carousel = () => {
                 }
               >
                 <div className='flex flex-col items-start gap-[4vmin] max-w-[60%]'>
-                  <h1 className='capitalize text-[4vmax] font-bold text-neutral-100'>
+                  <h1 className='capitalize text-[2.5vmax] md:text-[4vmax] font-bold text-neutral-100'>
                     Transforming Clicks into Customers
                   </h1>
                   <p className='text-[1.5vmax] text-neutral-100'>
@@ -173,7 +172,7 @@ const Carousel = () => {
                   </p>
                   <Link
                     href='/contact-us'
-                    className='bg-gradient-to-r from-[#49C6BC] to-[#447E8F] text-neutral-100 text-[1.8vmax] min-w-[24vmin] py-[1.3vmin] rounded-full capitalize text-center shadow'
+                    className='bg-gradient-to-r from-[#49C6BC] to-[#447E8F] text-neutral-100 text-[1.2vmax] md:text-[1.8vmax] min-w-[12vmin] md:min-w-[24vmin] py-[0.65vmin] md:py-[1.3vmin] rounded-full capitalize text-center shadow'
                   >
                     hire us
                   </Link>
@@ -184,7 +183,7 @@ const Carousel = () => {
                     alt='carousel 4th'
                     width={450}
                     height={225}
-                    className='min-w-[40vmax] max-w-[40vmax]'
+                    className='min-w-[30vmax] md:min-w-[40vmax] max-w-[30vmax] md:max-w-[40vmax]'
                   />
                 </div>
               </div>
@@ -197,7 +196,7 @@ const Carousel = () => {
                 }
               >
                 <div className='flex flex-col items-start gap-[4vmin] max-w-[60%]'>
-                  <h1 className='capitalize text-[4vmax] font-bold text-neutral-100'>
+                  <h1 className='capitalize text-[2.5vmax] md:text-[4vmax] font-bold text-neutral-100'>
                     Unlocking the Digital Doorway to Success
                   </h1>
                   <p className='text-[1.5vmax] text-neutral-100'>
@@ -207,7 +206,7 @@ const Carousel = () => {
                   </p>
                   <Link
                     href='/contact-us'
-                    className='bg-gradient-to-br from-[#A09AF3] to-[#7330AC] text-neutral-100 text-[1.8vmax] min-w-[24vmin] py-[1.3vmin] rounded-full capitalize text-center shadow'
+                    className='bg-gradient-to-br from-[#A09AF3] to-[#7330AC] text-neutral-100 text-[1.2vmax] md:text-[1.8vmax] min-w-[12vmin] md:min-w-[24vmin] py-[0.65vmin] md:py-[1.3vmin] rounded-full capitalize text-center shadow'
                   >
                     hire us
                   </Link>
@@ -218,25 +217,13 @@ const Carousel = () => {
                     alt='carousel 5th'
                     width={450}
                     height={225}
-                    className='min-w-[40vmax] max-w-[40vmax] drop-shadow-2xl'
+                    className='min-w-[30vmax] md:min-w-[40vmax] max-w-[30vmax] md:max-w-[40vmax] drop-shadow-2xl'
                   />
                 </div>
               </div>
             )}
           </motion.div>
         </AnimatePresence>
-        {/* <button
-          className='absolute top-1/2 -translate-y-1/2 bg-[rgba(0,0,0,0.5)] text-white p-2 cursor-pointer left-2 z-10 text-[2.5vmax]'
-          onClick={() => paginate(-1)}
-        >
-          <FaAngleLeft />
-        </button>
-        <button
-          className='absolute top-1/2 -translate-y-1/2 bg-[rgba(0,0,0,0.5)] text-white p-2 cursor-pointer right-2 z-10 text-[2.5vmax]'
-          onClick={() => paginate(1)}
-        >
-          <FaAngleRight />
-        </button> */}
         <div className='text-center absolute bottom-0 left-1/2 -translate-x-1/2 z-10'>
           {slides.map((slide, index) => (
             <span

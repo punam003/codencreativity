@@ -2,9 +2,11 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import FullImageView from "./FullImageView";
 
 const PortfolioCard = ({ imageUrl, width }) => {
   const [imageHeight, setImageHeight] = useState(0);
+  const [showFullImage, setShowFullImage] = useState(false);
   const containerRef = useRef(null);
   const imageRef = useRef(null);
 
@@ -18,7 +20,7 @@ const PortfolioCard = ({ imageUrl, width }) => {
 
   return (
     <div
-      className={`h-[60vmin] relative overflow-hidden min-w-[${width}vmax] cursor-pointer`}
+      className={`h-[45vmin] md:h-[60vmin] relative overflow-hidden min-w-[${width}vmax] cursor-pointer`}
       ref={containerRef}
     >
       <motion.div
@@ -31,16 +33,20 @@ const PortfolioCard = ({ imageUrl, width }) => {
           stiffness: 15,
           damping: 10,
         }}
+        onClick={() => setShowFullImage(true)}
       >
         <Image
           width={600}
           height={200}
           className=''
           src={imageUrl}
-          alt='Screenshot'
+          alt='portfolio-cover'
           ref={imageRef}
         />
       </motion.div>
+      {showFullImage && (
+        <FullImageView img={imageUrl} setShowFullImage={setShowFullImage} />
+      )}
     </div>
   );
 };
