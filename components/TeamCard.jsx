@@ -4,7 +4,6 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const TeamCard = ({ member, index }) => {
-  console.log(index);
   return (
     <motion.div
       className='flex items-center gap-[2vmin] even:self-start odd:self-end justify-evenly bg-white min-w-[55vmin] lg:min-w-[75vmin] py-[1.5vmin] rounded-xl shadow-md'

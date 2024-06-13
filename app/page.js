@@ -71,7 +71,7 @@ export default async function Home() {
         <Marquee texts={["Develop", "Design", "Marketing", "Branding"]} />
       </div>
       <div className="flex items-center flex-col mx-[3vmax] gap-[2vmin]">
-        <h1 className="bg-gradient-to-r from-[#0C7FFE] to-[#000000] text-transparent bg-clip-text font-extrabold text-[3vmax] max-w-[50%] text-center">
+        <h1 className="bg-gradient-to-r from-[#0C7FFE] to-[#000000] text-transparent bg-clip-text font-extrabold text-[3vmax] md:max-w-[50%] text-center">
           Transforming Business to ensure long-term viability
         </h1>
         <p className="text-[3vmin] text-center">
@@ -220,9 +220,7 @@ export default async function Home() {
                 height={60}
                 className="w-8 md:w-12 h-8 md:h-12 rounded-full"
               />
-              <h3 className="text-[2.7vmin] font-bold">
-                UI Design
-              </h3>
+              <h3 className="text-[2.7vmin] font-bold">UI Design</h3>
             </div>
             <ul className="flex flex-wrap justify-center list-disc items-center gap-x-[4vmin]">
               <li className="text-[2.5vmin] font-medium">UI Design</li>
@@ -247,9 +245,7 @@ export default async function Home() {
                 height={60}
                 className="w-8 md:w-12 h-8 md:h-12 rounded-full"
               />
-              <h3 className="text-[2.7vmin] font-bold">
-                Graphics Designing
-              </h3>
+              <h3 className="text-[2.7vmin] font-bold">Graphics Designing</h3>
             </div>
             <ul className="flex flex-wrap justify-center list-disc items-center gap-x-[4vmin]">
               <li className="text-[2.5vmin] font-medium">UI Design</li>

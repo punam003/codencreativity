@@ -84,7 +84,7 @@ export default function OurService() {
     <main className="mt-[12vmin]">
       <header className="flex flex-col justify-center gap-[5vmin] m-[3vmax]">
         <div className="flex items-center justify-center gap-[3.5vmin]">
-          <div>
+          <div className='hidden md:block'>
             <Image
               src="/our-services-side-cover.png"
               alt="our services"
@@ -93,7 +93,7 @@ export default function OurService() {
               className="min-w-[20vmax] max-w-[35vmax]"
             />
           </div>
-          <div className="flex flex-col max-w-[40vmax] gap-[2vmin] items-start">
+          <div className="flex flex-col md:max-w-[40vmax] gap-[2vmin] items-start">
             <h1 className="capitalize text-[4vmin] font-bold text-gray-700">
               services we provide
             </h1>
@@ -115,7 +115,7 @@ export default function OurService() {
       <div className="flex flex-wrap gap-y-[4vmax] justify-evenly my-[5vmax]">
         {services.map((service, index) => (
           <div
-            className="flex flex-col items-center bg-white max-w-[25vmax] p-[4vmin] gap-[2vmin] justify-evenly hover:scale-110 hover:shadow-xl transition duration-300"
+            className="flex flex-col items-center bg-white max-w-[20vmax] md:max-w-[25vmax] p-[4vmin] gap-[2vmin] justify-evenly hover:scale-110 hover:shadow-xl transition duration-300"
             key={index}
           >
             <Image
@@ -128,7 +128,7 @@ export default function OurService() {
             <h1 className="text-[1.6vmax] font-bold text-center">
               {service.title}
             </h1>
-            <hr className="border-4 border-neutral-700 min-w-[6vmax] rounded-full" />
+            <hr className="border md:border-4 border-neutral-700 min-w-[6vmax] rounded-full" />
             <p className="text-center text-[1vmax]">{service.description}</p>
           </div>
         ))}

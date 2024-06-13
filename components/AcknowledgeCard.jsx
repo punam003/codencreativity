@@ -4,7 +4,7 @@ import { Counter } from "./HomeServices";
 
 const AcknowledgeCard = ({ cardData }) => {
   return (
-    <div className='flex bg-white min-w-[22vmax] lg:min-w-[16vmax] min-h-[22vmax] lg:min-h-[16vmax] items-center justify-evenly flex-col rounded-2xl hover:scale-110 hover:shadow-xl transition duration-300'>
+    <div className='flex bg-white min-w-[20vmax] md:min-w-[22vmax] lg:min-w-[16vmax] min-h-[15vmax] md:min-h-[22vmax] lg:min-h-[16vmax] items-center justify-evenly flex-col rounded-2xl hover:scale-110 hover:shadow-xl transition duration-300'>
       <Image
         src={`/${cardData.icon}`}
         alt={cardData.altName}
