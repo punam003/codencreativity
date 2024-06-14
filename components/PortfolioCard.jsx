@@ -24,9 +24,9 @@ const PortfolioCard = ({ imageUrl, width }) => {
       ref={containerRef}
     >
       <motion.div
-        className='absolute top-0 left-0 w-full'
+        className="absolute top-0 left-0 w-full"
         initial={{ y: 0 }}
-        whileHover={{ y: -imageHeight }}
+        whileHover={{ y: -Math.abs(imageHeight) }}
         transition={{
           duration: 2,
           type: "spring",
@@ -38,9 +38,9 @@ const PortfolioCard = ({ imageUrl, width }) => {
         <Image
           width={600}
           height={200}
-          className=''
+          className=""
           src={imageUrl}
-          alt='portfolio-cover'
+          alt="portfolio-cover"
           ref={imageRef}
         />
       </motion.div>

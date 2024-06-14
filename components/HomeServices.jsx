@@ -9,7 +9,7 @@ export function Counter({ value, direction = "up" }) {
     damping: 100,
     stiffness: 100,
   });
-  const isInView = useInView(ref, { margin: "-100px" });
+  const isInView = useInView(ref);
 
   useEffect(() => {
     if (isInView) {
@@ -28,7 +28,7 @@ export function Counter({ value, direction = "up" }) {
           );
         }
       }),
-    [springValue]
+    [springValue, ref.current]
   );
 
   return <span ref={ref} />;
@@ -36,81 +36,81 @@ export function Counter({ value, direction = "up" }) {
 
 const HomeServices = () => {
   return (
-    <ul className='flex flex-col gap-[3.5vmin]'>
-      <li className='flex flex-col min-w-[40vmax] md:min-w-[35vmax]'>
-        <span className='font-semibold text-[2vmin]'>
+    <ul className="flex flex-col gap-[3.5vmin]">
+      <li className="flex flex-col min-w-[40vmax] md:min-w-[35vmax]">
+        <span className="font-semibold text-[2vmin]">
           Website Development Service
         </span>
-        <div className='w-full flex flex-col'>
-          <p className='self-end font-semibold text-[2vmin]'>
+        <div className="w-full flex flex-col">
+          <p className="self-end font-semibold text-[2vmin]">
             <Counter value={97} />%
           </p>
           <motion.span
-            className='h-1 bg-orange-500'
+            className="h-1 bg-orange-500"
             initial={{ width: "0%" }}
             whileInView={{ width: "97%" }}
             transition={{ duration: 3, delay: 0.5 }}
           ></motion.span>
         </div>
       </li>
-      <li className='flex flex-col min-w-[40vmax] md:min-w-[35vmax]'>
-        <span className='font-semibold text-[2vmin]'>
+      <li className="flex flex-col min-w-[40vmax] md:min-w-[35vmax]">
+        <span className="font-semibold text-[2vmin]">
           Website Redesign Service
         </span>
-        <div className='w-full flex flex-col'>
-          <p className='self-end font-semibold text-[2vmin]'>
+        <div className="w-full flex flex-col">
+          <p className="self-end font-semibold text-[2vmin]">
             <Counter value={88} />%
           </p>
           <motion.span
-            className='h-1 bg-orange-500'
+            className="h-1 bg-orange-500"
             initial={{ width: "0%" }}
             whileInView={{ width: "88%" }}
             transition={{ duration: 3, delay: 0.5 }}
           ></motion.span>
         </div>
       </li>
-      <li className='flex flex-col min-w-[40vmax] md:min-w-[35vmax]'>
-        <span className='font-semibold text-[2vmin]'>
+      <li className="flex flex-col min-w-[40vmax] md:min-w-[35vmax]">
+        <span className="font-semibold text-[2vmin]">
           Website Redesign Service
         </span>
-        <div className='w-full flex flex-col'>
-          <p className='self-end font-semibold text-[2vmin]'>
+        <div className="w-full flex flex-col">
+          <p className="self-end font-semibold text-[2vmin]">
             <Counter value={98} />%
           </p>
           <motion.span
-            className='h-1 bg-orange-500'
+            className="h-1 bg-orange-500"
             initial={{ width: "0%" }}
             whileInView={{ width: "98%" }}
             transition={{ duration: 3, delay: 0.5 }}
           ></motion.span>
         </div>
       </li>
-      <li className='flex flex-col min-w-[40vmax] md:min-w-[35vmax]'>
-        <span className='font-semibold text-[2vmin]'>
+      <li className="flex flex-col min-w-[40vmax] md:min-w-[35vmax]">
+        <span className="font-semibold text-[2vmin]">
           Website Redesign Service
         </span>
-        <div className='w-full flex flex-col'>
-          <p className='self-end font-semibold text-[2vmin]'>
+        <div className="w-full flex flex-col">
+          <p className="self-end font-semibold text-[2vmin]">
             <Counter value={95} />%
           </p>
           <motion.span
-            className='h-1 bg-orange-500'
+            className="h-1 bg-orange-500"
             initial={{ width: "0%" }}
             whileInView={{ width: "95%" }}
             transition={{ duration: 3, delay: 0.5 }}
           ></motion.span>
         </div>
       </li>
-      <li className='flex flex-col min-w-[40vmax] md:min-w-[35vmax]'>
-        <span className='font-semibold text-[2vmin]'>
+      <li className="flex flex-col min-w-[40vmax] md:min-w-[35vmax]">
+        <span className="font-semibold text-[2vmin]">
           Website Redesign Service
         </span>
-        <div className='w-full flex flex-col'>
-          <p className='self-end font-semibold text-[2vmin]'>
+        <div className="w-full flex flex-col">
+          <p className="self-end font-semibold text-[2vmin]">
             <Counter value={92} />%
           </p>
           <motion.span
-            className='h-1 bg-orange-500'
+            className="h-1 bg-orange-500"
             initial={{ width: "0%" }}
             whileInView={{ width: "92%" }}
             transition={{ duration: 3, delay: 0.5 }}

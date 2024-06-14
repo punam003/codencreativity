@@ -122,7 +122,7 @@ export default async function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-[linear-gradient(113.76deg,_#0A0A0A_0%,_#070554_71.06%)] flex flex-col md:flex-row items-end justify-evenly md:min-h-[50vh] px-[2vmax] relative rounded-lg self-stretch mx-[3vmax]">
+      <div className="bg-[linear-gradient(113.76deg,_#0A0A0A_0%,_#070554_71.06%)] flex flex-col md:flex-row items-end justify-evenly md:min-h-[50vh] px-[2vmax] relative rounded-lg self-stretch mx-[1vmax] md:mx-[3vmax]">
         <div className="flex flex-col items-start justify-between self-stretch relative z-10 my-[4vmax] gap-[2vmin] md:gap-0">
           <h1
             className={
@@ -154,12 +154,12 @@ export default async function Home() {
         </div>
         <div className="bg-white w-full absolute bottom-0 left-0 min-h-[20vh] hidden md:block"></div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-[3vmin] mx-[3vmax] self-stretch">
+      <div className="flex flex-col items-center justify-center gap-[3vmin] mx-[1vmax] md:mx-[3vmax] self-stretch">
         <h1 className="bg-gradient-to-r from-[#0C7FFE] to-[#000000] text-transparent bg-clip-text font-extrabold text-[3vmax] text-center uppercase">
           services we provide
         </h1>
         <div className="flex items-stretch flex-wrap justify-evenly self-stretch">
-          <div className="flex flex-col justify-evenly items-center bg-white max-w-[25vmax] md:max-w-[35vmax] lg:max-w-[25vmax] px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]">
+          <div className="flex flex-col justify-evenly items-center bg-white max-w-[20vmax] md:max-w-[35vmax] lg:max-w-[25vmax] px-[1.5vmin] md:px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[1vmin] md:m-[3vmin]">
             <div className="flex items-center gap-[1.7vmin] self-center">
               <Image
                 src="/seo_273564.png"
@@ -184,7 +184,7 @@ export default async function Home() {
               learn more
             </button>
           </div>
-          <div className="flex flex-col justify-evenly items-center bg-white max-w-[25vmax] md:max-w-[35vmax] lg:max-w-[25vmax] px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]">
+          <div className="flex flex-col justify-evenly items-center bg-white max-w-[20vmax] md:max-w-[35vmax] lg:max-w-[25vmax] px-[1.5vmin] md:px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[1vmin] md:m-[3vmin]">
             <div className="flex items-center gap-[1.7vmin] self-center">
               <Image
                 src="/Mobile App Development.png"
@@ -211,7 +211,7 @@ export default async function Home() {
               learn more
             </button>
           </div>
-          <div className="flex flex-col justify-evenly items-center bg-white max-w-[25vmax] md:max-w-[35vmax] lg:max-w-[25vmax] px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]">
+          <div className="flex flex-col justify-evenly items-center bg-white max-w-[20vmax] md:max-w-[35vmax] lg:max-w-[25vmax] px-[1.5vmin] md:px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[1vmin] md:m-[3vmin]">
             <div className="flex items-center gap-[1.7vmin] self-center">
               <Image
                 src="/UI Design_1413315.png"
@@ -236,7 +236,7 @@ export default async function Home() {
               learn more
             </button>
           </div>
-          <div className="flex flex-col justify-evenly items-center bg-white max-w-[25vmax] md:max-w-[35vmax] lg:max-w-[25vmax] px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]">
+          <div className="flex flex-col justify-evenly items-center bg-white max-w-[20vmax] md:max-w-[35vmax] lg:max-w-[25vmax] px-[1.5vmin] md:px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[1vmin] md:m-[3vmin]">
             <div className="flex items-center gap-[1.7vmin] self-center">
               <Image
                 src="/Graphics Designing_780769.png"
@@ -261,7 +261,7 @@ export default async function Home() {
               learn more
             </button>
           </div>
-          <div className="flex flex-col justify-evenly items-center bg-white max-w-[25vmax] md:max-w-[35vmax] lg:max-w-[25vmax] px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]">
+          <div className="flex flex-col justify-evenly items-center bg-white max-w-[20vmax] md:max-w-[35vmax] lg:max-w-[25vmax] px-[1.5vmin] md:px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[1vmin] md:m-[3vmin]">
             <div className="flex items-center gap-[1.7vmin] self-center">
               <Image
                 src="/Digital Marketing.png"
@@ -288,7 +288,7 @@ export default async function Home() {
               learn more
             </button>
           </div>
-          <div className="flex flex-col justify-evenly items-center bg-white max-w-[25vmax] md:max-w-[35vmax] lg:max-w-[25vmax] px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[3vmin]">
+          <div className="flex flex-col justify-evenly items-center bg-white max-w-[20vmax] md:max-w-[35vmax] lg:max-w-[25vmax] px-[1.5vmin] md:px-[2.5vmin] py-[2vmin] gap-[2.5vmin] rounded-xl shadow m-[1vmin] md:m-[3vmin]">
             <div className="flex items-center gap-[1.7vmin] self-center">
               <Image
                 src="/web_7358652.png"
@@ -336,7 +336,7 @@ export default async function Home() {
           ))}
         </div>
       </div>
-      <div className="flex items-center mx-[3vmax]">
+      <div className="flex items-center mx-[1vmax] md:mx-[3vmax]">
         <div className="flex flex-col items-start gap-[1.6vmax]">
           <div className="flex items-center gap-[2vmin]">
             <h3 className="uppercase text-neutral-700 font-medium text-[1.4vmax]">
@@ -369,7 +369,7 @@ export default async function Home() {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center mx-[3vmax] gap-[3vmin]">
+      <div className="flex flex-col items-center mx-[1vmax] md:mx-[3vmax] gap-[3vmin]">
         <p className="font-medium text-[3vmin] uppercase text-neutral-600">
           our projects
         </p>
