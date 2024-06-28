@@ -14,6 +14,7 @@ import ClientMarquee from "@/components/ClientMarquee";
 import BounceCut from "@/components/BounceCut";
 import ContactForm from "@/components/ContactForm";
 import PortfolioCard from "@/components/PortfolioCard";
+import VideoService from "@/components/VideoService";
 
 const crimsonText = Crimson_Text({
   subsets: ["latin"],
@@ -62,6 +63,25 @@ export default async function Home() {
     },
   ];
 
+  const serviceVideo = [
+    {
+      src: "http://res.cloudinary.com/dep69vvj0/video/upload/v1719541860/web-development.mov",
+      h1: "web development",
+    },
+    {
+      src: "http://res.cloudinary.com/dep69vvj0/video/upload/v1719541804/marketing.mov",
+      h1: "marketing",
+    },
+    {
+      src: "http://res.cloudinary.com/dep69vvj0/video/upload/v1719541730/design.mov",
+      h1: "design",
+    },
+    {
+      src: "http://res.cloudinary.com/dep69vvj0/video/upload/v1719541448/branding.mov",
+      h1: "branding",
+    },
+  ];
+
   const portfolios = await getPortfolios();
 
   return (
@@ -89,38 +109,9 @@ export default async function Home() {
         </p>
       </div>
       <div className="flex justify-center items-center flex-wrap lg:flex-nowrap">
-        <div className="relative">
-          <div className="min-h-[60vh] min-w-[24.5vmax] bg-neutral-700"></div>
-          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-            <h1 className="capitalize text-neutral-100 text-[3vmin] font-bold text-center">
-              website development
-            </h1>
-          </div>
-        </div>
-        <div className="relative">
-          <div className="min-h-[60vh] min-w-[24.5vmax] bg-neutral-600"></div>
-          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-            <h1 className="text-neutral-100 text-[3vmin] font-bold text-center">
-              Application &amp; UI/UX
-            </h1>
-          </div>
-        </div>
-        <div className="relative">
-          <div className="min-h-[60vh] min-w-[24.5vmax] bg-neutral-700"></div>
-          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-            <h1 className="capitalize text-neutral-100 text-[3vmin] font-bold text-center">
-              marketing
-            </h1>
-          </div>
-        </div>
-        <div className="relative">
-          <div className="min-h-[60vh] min-w-[24.5vmax] bg-neutral-600"></div>
-          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
-            <h1 className="text-neutral-100 text-[3vmin] font-bold capitalize text-center">
-              branding
-            </h1>
-          </div>
-        </div>
+        {serviceVideo.map((elm, ind) => (
+          <VideoService videoUris={elm} key={ind} />
+        ))}
       </div>
       <div className="bg-[linear-gradient(113.76deg,_#0A0A0A_0%,_#070554_71.06%)] flex flex-col md:flex-row items-end justify-evenly md:min-h-[50vh] px-[2vmax] relative rounded-lg self-stretch mx-[1vmax] md:mx-[3vmax]">
         <div className="flex flex-col items-start justify-between self-stretch relative z-10 my-[4vmax] gap-[2vmin] md:gap-0">

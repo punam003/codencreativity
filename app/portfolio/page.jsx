@@ -4,6 +4,7 @@ import PortfolioCategoryComponents from "@/components/PortfolioCategoryComponent
 export const metadata = {
   title: "CodeNCreativity | Portfolio",
 };
+
 async function getPortfolios() {
   try {
     const res = await fetch(`${process.env.API_URI}/portfolios?limit=12`);
