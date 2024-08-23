@@ -15,21 +15,12 @@ import BounceCut from "@/components/BounceCut";
 import ContactForm from "@/components/ContactForm";
 import PortfolioCard from "@/components/PortfolioCard";
 import VideoService from "@/components/VideoService";
+import getPortfolios from "@/actions/getAllPortfolios";
 
 const crimsonText = Crimson_Text({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
 });
-
-async function getPortfolios() {
-  try {
-    const res = await fetch(`${process.env.API_URI}/portfolios?limit=4`);
-    const data = await res.json();
-    return data;
-  } catch (error) {
-    console.log(error);
-  }
-}
 
 export default async function Home() {
   const cutOut = [
@@ -82,7 +73,7 @@ export default async function Home() {
     },
   ];
 
-  const portfolios = await getPortfolios();
+  const portfolios = await getPortfolios(0, 4);
 
   return (
     <main className="flex gap-[4vmin] flex-col items-center justify-between">
@@ -368,7 +359,7 @@ export default async function Home() {
           Our Portfolio of Success Stories
         </h1>
         <div className="flex justify-evenly gap-[3vmin] flex-wrap md:flex-nowrap">
-          {portfolios?.map((item) => (
+          {portfolios.portfolios?.map((item) => (
             <PortfolioCard imageUrl={item.cover} key={item._id} width={20} />
           ))}
         </div>
