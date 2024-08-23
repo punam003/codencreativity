@@ -33,11 +33,11 @@ const VideoService = ({ videoUris }) => {
           autoPlay
           loop
           muted
-          className="max-w-[24.5vmax]"
+          className="max-w-[40vmax] lg:max-w-[24.5vmax]"
         ></video>
       )}
       <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-neutral-900 bg-opacity-60">
-        <h1 className="capitalize text-neutral-100 text-[3vmin] font-bold text-center">
+        <h1 className="capitalize text-neutral-100 text-[5vmin] sm:text-[3vmin] font-bold text-center">
           {videoUris.h1}
         </h1>
       </div>

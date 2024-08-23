@@ -1,5 +1,4 @@
 import getPortfoliosByCategory from "@/actions/getAllPortfoliosByCategory";
-import PortfolioCard from "@/components/PortfolioCard";
 import PortfolioCategoryComponents from "@/components/PortfolioCategoryComponents";
 import PortfolioList from "@/components/PortfolioList";
 

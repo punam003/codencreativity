@@ -94,10 +94,10 @@ export default function OurService() {
             />
           </div>
           <div className="flex flex-col md:max-w-[40vmax] gap-[2vmin] items-start">
-            <h1 className="capitalize text-[4vmin] font-bold text-gray-700">
+            <h1 className="capitalize text-[2.5vmax] sm:text-[4vmin] font-bold text-gray-700">
               services we provide
             </h1>
-            <p className="text-gray-700 text-[2.3vmin]">
+            <p className="text-gray-700 text-[2.7vmin] sm:text-[2.3vmin]">
               Our web development company specializes in creating dynamic,
               user-friendly websites tailored to your business needs.Our expert
               team is dedicated to delivering high-quality web solutions that

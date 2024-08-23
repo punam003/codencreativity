@@ -30,7 +30,7 @@ const ContactForm = () => {
 
   return (
     <form
-      className='min-w-[20vmax] min-h-[20vmax] bg-neutral-100 rounded-xl relative z-10 flex flex-col items-start px-[2.5vmin] py-[2vmin] gap-[1.5vmin] justify-evenly self-stretch h-full'
+      className='min-w-[30vmax] sm:min-w-[20vmax] min-h-[35vmax] sm:min-h-[20vmax] bg-neutral-100 rounded-xl relative z-10 flex flex-col items-start px-[2.5vmin] py-[2vmin] gap-[1.5vmin] justify-evenly self-stretch h-full'
       onSubmit={handelSubmit}
     >
       <div>

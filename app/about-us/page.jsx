@@ -62,10 +62,10 @@ export default function AboutUs() {
             />
           </div>
           <div className="flex flex-col md:max-w-[40vmax] gap-[2vmin] items-start">
-            <h1 className="capitalize text-[4vmin] font-bold text-gray-700">
+            <h1 className="capitalize text-[2.5vmax] sm:text-[4vmin] font-bold text-gray-700">
               about us
             </h1>
-            <p className="text-gray-700 text-[2.3vmin]">
+            <p className="text-gray-700 text-[2.7vmin] sm:text-[2.3vmin]">
               Established in 2022, Code N Creativity is a leading online
               marketing and software development company partnering with
               companies of various sizes all around the globe. Our commitment to
@@ -92,11 +92,11 @@ export default function AboutUs() {
         </div>
       </header>
       <section className="bg-[url('/client-serve-bg.png')] bg-no-repeat bg-cover bg-center flex flex-col items-center justify-evenly gap-[4vmin] py-[3vmax]">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-center mx-[3vmax] sm:mx-0">
           <h1 className="capitalize font-bold text-[2.5vmax]">
             Serving Our Clients For Over This Years
           </h1>
-          <p className="text-[2vmin]">
+          <p className="text-[2.7vmin] sm:text-[2vmin]">
             We Are A Group Of Professional Developers & Marketing Experts
           </p>
         </div>

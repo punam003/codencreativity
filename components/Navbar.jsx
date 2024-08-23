@@ -32,7 +32,7 @@ const Navbar = () => {
               marginRight: "2vmin",
               borderRadius: "50vmin",
               marginTop: "1.3vmin",
-              width: "98%",
+              width: "95%",
             }
           : {
               width: "100%",

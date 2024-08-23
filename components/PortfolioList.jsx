@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import PortfolioCard from "./PortfolioCard";
 import getPortfolios from "@/actions/getAllPortfolios";
 import getPortfoliosByCategory from "@/actions/getAllPortfoliosByCategory";

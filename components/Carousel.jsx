@@ -88,14 +88,14 @@ const Carousel = () => {
               <div
                 className={
                   crimsonText.className +
-                  " flex items-center justify-between min-h-full w-full px-[2.5vmin] bg-gradient-to-r from-[#12054E] to-[#39065E]"
+                  " flex items-center justify-center sm:justify-between min-h-full w-full px-[2.5vmin] bg-gradient-to-r from-[#12054E] to-[#39065E] py-[2vmin]"
                 }
               >
-                <div className="flex flex-col items-start gap-[4vmin] max-w-[60%]">
-                  <h1 className="capitalize text-[2.5vmax] md:text-[4vmax] font-bold text-neutral-100 md:text-center">
+                <div className="flex flex-col items-start gap-[4vmin] sm:max-w-[60%]">
+                  <h1 className="capitalize text-[3vmax] md:text-[4vmax] font-bold text-neutral-100 md:text-center">
                     We Create Website For You
                   </h1>
-                  <p className="text-[1.5vmax] text-neutral-100">
+                  <p className="text-[2vmax] sm:text-[1.5vmax] text-neutral-100">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -103,7 +103,7 @@ const Carousel = () => {
                   </p>
                   <Link
                     href="/contact-us"
-                    className="bg-gradient-to-r from-[#677DD8] to-[#1C79AF] text-neutral-100 text-[1.2vmax] md:text-[1.8vmax] min-w-[12vmin] md:min-w-[24vmin] py-[0.65vmin] md:py-[1.3vmin] rounded-full capitalize text-center shadow"
+                    className="bg-gradient-to-r from-[#677DD8] to-[#1C79AF] text-neutral-100 text-[1.8vmax] min-w-[24vmin] py-[0.65vmin] md:py-[1.3vmin] rounded-full capitalize text-center shadow"
                   >
                     hire us
                   </Link>
@@ -114,7 +114,7 @@ const Carousel = () => {
                     alt="carousel 2nd"
                     width={450}
                     height={225}
-                    className="min-w-[30vmax] md:min-w-[40vmax] max-w-[30vmax] md:max-w-[40vmax] drop-shadow-2xl"
+                    className="hidden sm:inline-flex min-w-[30vmax] md:min-w-[40vmax] max-w-[30vmax] md:max-w-[40vmax] drop-shadow-2xl"
                   />
                 </div>
               </div>
@@ -123,21 +123,21 @@ const Carousel = () => {
               <div
                 className={
                   crimsonText.className +
-                  " flex items-center justify-between min-h-full w-full px-[2.5vmin] bg-gradient-to-r from-[#6B2289] to-[#321954]"
+                  " flex items-center justify-center sm:justify-between min-h-full w-full px-[2.5vmin] bg-gradient-to-r from-[#6B2289] to-[#321954]"
                 }
               >
-                <div className="flex flex-col items-start gap-[4vmin] max-w-[60%]">
-                  <h1 className="capitalize text-[2.5vmax] md:text-[4vmax] font-bold text-neutral-100 md:text-center">
+                <div className="flex flex-col items-start gap-[4vmin] sm:max-w-[60%]">
+                  <h1 className="capitalize text-[3vmax] md:text-[4vmax] font-bold text-neutral-100 md:text-center">
                     Crafting Dreams Into Reality
                   </h1>
-                  <p className="text-[1.5vmax] text-neutral-100">
+                  <p className="text-[2vmax] sm:text-[1.5vmax] text-neutral-100">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                     enim ad minim veniam, quis nostrud exercitation ullamco
                     laboris nisi ut aliquip ex ea commodo consequat
                   </p>
                   <Link
                     href="/contact-us"
-                    className="bg-gradient-to-r from-[#F96CE1] to-[#5C4298] text-neutral-100 text-[1.2vmax] md:text-[1.8vmax] min-w-[12vmin] md:min-w-[24vmin] py-[0.65vmin] md:py-[1.3vmin] rounded-full capitalize text-center shadow"
+                    className="bg-gradient-to-r from-[#F96CE1] to-[#5C4298] text-neutral-100 text-[1.8vmax] min-w-[24vmin] py-[0.65vmin] md:py-[1.3vmin] rounded-full capitalize text-center shadow"
                   >
                     hire us
                   </Link>
@@ -148,7 +148,7 @@ const Carousel = () => {
                     alt="carousel 3rd"
                     width={450}
                     height={225}
-                    className="min-w-[30vmax] md:min-w-[40vmax] max-w-[30vmax] md:max-w-[40vmax] drop-shadow-2xl"
+                    className="hidden sm:inline-flex min-w-[30vmax] md:min-w-[40vmax] max-w-[30vmax] md:max-w-[40vmax] drop-shadow-2xl"
                   />
                 </div>
               </div>
@@ -157,14 +157,14 @@ const Carousel = () => {
               <div
                 className={
                   crimsonText.className +
-                  " flex items-center justify-between min-h-full w-full px-[2.5vmin] bg-gradient-to-br from-[#53C5B7] to-[#0F6376]"
+                  " flex items-center justify-center sm:justify-between min-h-full w-full px-[2.5vmin] bg-gradient-to-br from-[#53C5B7] to-[#0F6376]"
                 }
               >
-                <div className="flex flex-col items-start gap-[4vmin] max-w-[60%]">
-                  <h1 className="capitalize text-[2.5vmax] md:text-[4vmax] font-bold text-neutral-100">
+                <div className="flex flex-col items-start gap-[4vmin] sm:max-w-[60%]">
+                  <h1 className="capitalize text-[3vmax] md:text-[4vmax] font-bold text-neutral-100">
                     Transforming Clicks into Customers
                   </h1>
-                  <p className="text-[1.5vmax] text-neutral-100">
+                  <p className="text-[2vmax] sm:text-[1.5vmax] text-neutral-100">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incidid. Ut enim ad minim veniam, quis
                     nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -172,7 +172,7 @@ const Carousel = () => {
                   </p>
                   <Link
                     href="/contact-us"
-                    className="bg-gradient-to-r from-[#49C6BC] to-[#447E8F] text-neutral-100 text-[1.2vmax] md:text-[1.8vmax] min-w-[12vmin] md:min-w-[24vmin] py-[0.65vmin] md:py-[1.3vmin] rounded-full capitalize text-center shadow"
+                    className="bg-gradient-to-r from-[#49C6BC] to-[#447E8F] text-neutral-100 text-[1.8vmax] min-w-[24vmin] py-[0.65vmin] md:py-[1.3vmin] rounded-full capitalize text-center shadow"
                   >
                     hire us
                   </Link>
@@ -183,7 +183,7 @@ const Carousel = () => {
                     alt="carousel 4th"
                     width={450}
                     height={225}
-                    className="min-w-[30vmax] md:min-w-[40vmax] max-w-[30vmax] md:max-w-[40vmax]"
+                    className="hidden sm:inline-flex min-w-[30vmax] md:min-w-[40vmax] max-w-[30vmax] md:max-w-[40vmax]"
                   />
                 </div>
               </div>
@@ -192,21 +192,21 @@ const Carousel = () => {
               <div
                 className={
                   crimsonText.className +
-                  " flex items-center justify-between min-h-full w-full px-[2.5vmin] bg-gradient-to-r from-[#9C91ED] to-[#310A52]"
+                  " flex items-center justify-center sm:justify-between min-h-full w-full px-[2.5vmin] bg-gradient-to-r from-[#9C91ED] to-[#310A52]"
                 }
               >
-                <div className="flex flex-col items-start gap-[4vmin] max-w-[60%]">
-                  <h1 className="capitalize text-[2.5vmax] md:text-[4vmax] font-bold text-neutral-100">
+                <div className="flex flex-col items-start gap-[4vmin] sm:max-w-[60%]">
+                  <h1 className="capitalize text-[3vmax] md:text-[4vmax] font-bold text-neutral-100">
                     Unlocking the Digital Doorway to Success
                   </h1>
-                  <p className="text-[1.5vmax] text-neutral-100">
+                  <p className="text-[2vmax] sm:text-[1.5vmax] text-neutral-100">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
                   <Link
                     href="/contact-us"
-                    className="bg-gradient-to-br from-[#A09AF3] to-[#7330AC] text-neutral-100 text-[1.2vmax] md:text-[1.8vmax] min-w-[12vmin] md:min-w-[24vmin] py-[0.65vmin] md:py-[1.3vmin] rounded-full capitalize text-center shadow"
+                    className="bg-gradient-to-br from-[#A09AF3] to-[#7330AC] text-neutral-100 text-[1.8vmax] min-w-[24vmin] py-[0.65vmin] md:py-[1.3vmin] rounded-full capitalize text-center shadow"
                   >
                     hire us
                   </Link>
@@ -217,7 +217,7 @@ const Carousel = () => {
                     alt="carousel 5th"
                     width={450}
                     height={225}
-                    className="min-w-[30vmax] md:min-w-[40vmax] max-w-[30vmax] md:max-w-[40vmax] drop-shadow-2xl"
+                    className="hidden sm:inline-flex min-w-[30vmax] md:min-w-[40vmax] max-w-[30vmax] md:max-w-[40vmax] drop-shadow-2xl"
                   />
                 </div>
               </div>

@@ -386,7 +386,7 @@ export default async function Home() {
         </div>
       </div>
       <div className="bg-[url('/contact-bg.png')] bg-no-repeat bg-cover w-full flex flex-col md:flex-row items-center py-[4vmin] justify-evenly gap-[4vmin] md:gap-0">
-        <div className="flex flex-col items-start gap-[1.6vmax] md:max-w-[30vmax]">
+        <div className="flex flex-col items-start gap-[1.6vmax] md:max-w-[30vmax] px-[3vmax] sm:px-0">
           <div className="flex items-center gap-[2vmin]">
             <h3 className="capitalize text-neutral-100 font-medium text-[1.4vmax]">
               Contact Us
@@ -396,26 +396,26 @@ export default async function Home() {
           <h1 className="text-[2.4vmax] capitalize text-neutral-100 font-bold">
             Have a project in mind? Let&apos;s Start
           </h1>
-          <p className="text-neutral-100 text-[1vmax]">
+          <p className="text-neutral-100 text-[1.2vmax] sm:text-[1vmax]">
             Just fill out the given form & our team will connect with you. We
             will arrange a free consultancy call for you.
           </p>
           <Link
             href="tel:+919007000328"
-            className="text-neutral-100 text-[1vmax] font-bold"
+            className="text-neutral-100 text-[1.2vmax] sm:text-[1vmax] font-bold"
           >
             +91 9007000328
           </Link>
           <Link
             href="mailto:codencreativity@gmail.com"
-            className="text-neutral-100 text-[1vmax] font-bold"
+            className="text-neutral-100 text-[1.2vmax] sm:text-[1vmax] font-bold"
           >
             codencreativity@gmail.com
           </Link>
         </div>
         <div className="relative self-center md:self-stretch">
           <ContactForm />
-          <div className="w-full h-full bg-neutral-100 absolute top-0 left-4 mt-2 opacity-35 transform scale-x-[-1] rounded-xl"></div>
+          <div className="w-full h-full bg-neutral-100 absolute top-0 left-4 mt-2 opacity-35 transform scale-x-[-1] rounded-xl hidden sm:block"></div>
         </div>
       </div>
     </main>
